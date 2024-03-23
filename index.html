@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="mt-[30px] mx-auto w-[300px] border border-[rgb(41,57,194,.6)] border-[3px] rounded-[3px]">
+        <form id="form" action="" class="w-[300px] p-[21px] bg-white-300 text-[12px]">
+            <h1 class="text-[#0f2027] text-center">Registration</h1>
+            <div class="flex flex-col">
+                <label for="username">Username</label>
+                <input class="border border-[3px] border-[#f0f0f0] block text-[12px] p-[9px] w-full focus:outline-none" id="username" type="text">
+                <div class="error text-red-500 text-[9px] h-[12px]"></div>
+            </div>
+            <div class="flex flex-col">
+                <label for="email">Email</label>
+                <input class="border border-[3px] border-[#f0f0f0] block text-[12px] p-[9px] w-full focus:outline-none" id="email" type="email">
+                <div class="error text-red-500 text-[9px] h-[12px]"></div>
+            </div>
+            <div class="flex flex-col">
+                <label for="password">Password</label>
+                <input class="border border-[3px] border-[#f0f0f0] block text-[12px] p-[9px] w-full focus:outline-none" id="password" type="password">
+                <div class="error text-red-500 text-[9px] h-[12px]"></div>
+            </div>
+            <div class="flex flex-col">
+                <label for="phone">Phone</label>
+                <input class="border border-[3px] border-[#f0f0f0] block text-[12px] p-[9px] w-full focus:outline-none" id="phone" type="tel">
+                <div class="error text-red-500 text-[9px] h-[12px]"></div>
+            </div>
+            <button type="submit" class="p-[12px] mt-[12px] text-white bg-[rgb(41,57,194)] hover:bg-[rgb(41,57,194,.6)] rounded-[3px]">Submit</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
